@@ -1,0 +1,540 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DCDCDC"
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#483D8B"
+        >
+
+        <TextView
+            android:id="@+id/n1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/n2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="40"
+
+            />
+
+        <TextView
+            android:id="@+id/n2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/n3"
+            app:layout_constraintStart_toEndOf="@id/n1"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_weight="30"
+            />
+
+        <TextView
+
+            android:id="@+id/n3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="GPA"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/n2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="30"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner1"
+        android:id="@+id/name1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.07"
+        android:id="@+id/spinner1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa1"
+        app:layout_constraintStart_toEndOf="@id/name1"
+        app:layout_constraintHorizontal_weight="0.6"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.07"
+        android:id="@+id/gpa1"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        app:layout_constraintVertical_bias="0.14"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner2"
+        android:id="@+id/name2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:entries="@array/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa2"
+        app:layout_constraintHorizontal_weight="0.6  "
+        app:layout_constraintStart_toEndOf="@id/name2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.14"
+        android:id="@+id/gpa2"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        app:layout_constraintVertical_bias="0.21"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner3"
+        android:id="@+id/name3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.21"
+        android:id="@+id/spinner3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa3"
+        app:layout_constraintStart_toEndOf="@id/name3"
+        app:layout_constraintHorizontal_weight="0.6  "
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.21"
+        android:id="@+id/gpa3"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner4"
+        android:id="@+id/name4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.28"
+        android:id="@+id/spinner4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa1"
+        app:layout_constraintStart_toEndOf="@id/name1"
+        app:layout_constraintHorizontal_weight="0.6  "
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.28"
+        android:id="@+id/gpa4"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner1"
+        android:id="@+id/name5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.35"
+        android:id="@+id/spinner5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa5"
+        app:layout_constraintStart_toEndOf="@id/name5"
+        app:layout_constraintHorizontal_weight="0.6"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.35"
+        android:id="@+id/gpa5"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner6"
+        android:id="@+id/name6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.42"
+        android:id="@+id/spinner6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa6"
+        app:layout_constraintStart_toEndOf="@id/name6"
+        app:layout_constraintHorizontal_weight="0.6"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.42"
+        android:id="@+id/gpa6"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <EditText
+        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner7"
+        android:id="@+id/name7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:entries="@array/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa7"
+        app:layout_constraintHorizontal_weight="0.6"
+        app:layout_constraintStart_toEndOf="@id/name7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.49"
+        android:id="@+id/gpa7"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        app:layout_constraintVertical_bias="0.56"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner8"
+        android:id="@+id/name8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.56"
+        android:id="@+id/spinner8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa8"
+        app:layout_constraintStart_toEndOf="@id/name8"
+        app:layout_constraintHorizontal_weight="0.6 "
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.56"
+        android:id="@+id/gpa8"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        app:layout_constraintVertical_bias="0.63"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner9"
+        android:id="@+id/name9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        app:layout_constraintVertical_bias="0.63"
+        android:id="@+id/spinner9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa9"
+        app:layout_constraintStart_toEndOf="@id/name9"
+        app:layout_constraintHorizontal_weight="0.6  "
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.63"
+        android:id="@+id/gpa9"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <EditText
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spinner10"
+        android:id="@+id/name10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text"
+        app:layout_constraintHorizontal_weight="1"
+        />
+
+    <Spinner
+        android:id="@+id/spinner10"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:entries="@array/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gpa10"
+        app:layout_constraintHorizontal_weight="0.6  "
+        app:layout_constraintStart_toEndOf="@id/name10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+
+        />
+
+    <EditText
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_bias="0.7"
+        android:id="@+id/gpa10"
+        android:layout_width="0dp"
+        android:hint="Enter GPA"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button2"
+        android:textColor="#ffffff"
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:onClick="Done"
+        android:text="Done"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button"
+        android:onClick="Clear"
+        android:text="Clear"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/gp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
